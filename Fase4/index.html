@@ -1,0 +1,108 @@
+<header>
+    <title>Objetos Virtuales de Aprendizaje - HTML</title>
+</header>
+<style>
+    body{ margin: 0; background: rgb(116, 176, 179);}
+    .pagina{ 
+        background: white;
+        display: grid;
+        height: 110vh;
+        grid-template:
+        "header"    100px
+        "nav"       50px
+        "contenido" auto
+        "sidebar"   100px
+        "footer"    100px
+    }
+    
+    .header{ grid-area: header;text-align: center}
+    .nav{ grid-area: nav;text-align: center}
+    .contenido{ grid-area: contenido;}
+    .sidebar{ grid-area: sidebar;}
+    .footer{ grid-area: footer;text-align: center; padding: 3px;  background-color: rgb(248, 212, 200);}
+    @media (min-width:900px){            
+        .pagina{
+            max-width: 1000px;
+            margin: auto;
+            grid-template:
+            "header     header"     100px
+            "nav        nav"        50px
+            "sidebar    contenido"  auto                
+            "footer     footer"     100px
+            / 200px     1fr
+        }
+    }    
+</style>
+</head>
+<body>
+<div class="pagina">
+    <div class="header"> 
+        <font face="nunito,arial,verdana"><h1>Conociendo HTML (HyperText Markup Language) </h1></font>
+    </div>
+    <div class="nav"> 
+        <font face="nunito,arial,verdana">
+            <a href='index.html'>Home </a>|
+            <a href='temas.html'>Temas </a>|
+            <a href='recursos.html'>Recursos Multimedia </a>|
+            <a href='aprendizaje.html'>Aprendizaje </a>|
+            <a href='autor.html'>autor </a>|
+            <a href='aside.html'>Contenido UNAD </a>
+         
+
+        </font>
+      
+    </div>
+    <div class="contenido"> 
+        <p>
+            <font face="nunito,arial,verdana">
+            <section id="intro">
+                <h1>Proposito del sitio</h1>
+                <p>
+                      
+                   ¡Aplicando Ingeniería Pos Pandemia!. Teniendo en cuenta que los más recientes hechos nos han llevado a investigar e implementar nuevos modelos de enseñanza y aprendizaje,
+                   nos encontramos con la oportunidad de explorar a fondo las TICs, en este caso, aplicando el desarrollo de componentes didacticos en la web que permitan brindar recursos
+                   educativos digitales que cumplan el objetivo de dinamizar el aprendizaje. <br>
+                       
+                   Dentro de este sitio encontraremos contenido de apoyo para inciar con el desarrollo web basados en la profundización del lenguaje HTML <br>
+                </p>
+            </section>
+            <section id="fundamentos">
+                <h2>Fundamentos de HTML</h2></br>
+                      
+                El HTML (HyperText Markup Language) es un lenguaje para describir el contenido de los documentos de 
+                la web.     Utiliza una sintaxis especial que contiene marcadores (conocidos como "elementos") que rodean 
+                al texto que hay dentro del documento para indicar a los agentes de usuario cómo deben interpretar esta
+                parte del documento.</br>
+                HTML fue inventado por Tim Berners-Lee, un físico del instituto de investigación CERN en Suiza.
+                Se le ocurrió la idea de un sistema de hipertexto basado en Internet y publicó la primera versión de 
+                HTML en 1991. Desde entonces, cada nueva versión del lenguaje HTML viene con nuevas etiquetas y 
+                atributos para el marcado.</br>
+              
+                El navegador web lee el archivo HTML y muestra su contenido para que los usuarios de Internet puedan verlo.</br></br>
+                Todas las páginas HTML cuentan con una serie de elementos HTML, formados por un conjunto de etiquetas y atributos. 
+                Los elementos HTML son los bloques de construcción de una página web. Una etiqueta indica al navegador dónde empieza y termina un elemento, 
+                mientras que un atributo describe las características de un elemento.</br></br>
+    
+                <B>Las tres partes principales de un elemento son:</B></br>
+                
+                Etiqueta de apertura. Se utiliza para indicar dónde empieza a tener efecto un elemento. Esta se envuelve con corchetes de apertura y cierre. Por ejemplo, usa la etiqueta de apertura <p> para crear un párrafo.
+                Contenido. Es el resultado que ven los demás usuarios.</br>
+                Etiqueta de cierre. Igual que la de apertura, pero con una barra inclinada antes del nombre del elemento.
+            </font>
+        </section>
+        </p>
+
+    </div>
+    <div class="sidebar">  
+    <nav>
+        <ul>
+         <li><a href='#intro'>Introducción</a></li>
+         <li><a href='#fundamentos'>Fundamentos HTML</a></li> 
+         
+        </ul> 
+     </nav>
+    </div>
+    <div class="footer">Desarrollado por : Johana Benavidez</div>
+</div>
+</body>
+</html>

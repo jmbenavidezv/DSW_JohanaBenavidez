@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Objetos Virtuales de Aprendizaje - HTML</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        body{ margin: 0; background: rgb(116, 176, 179);}
+        .pagina{ 
+            background: white;
+            display: grid;
+            height: auto;
+            grid-template:
+            "header"    100px
+            "nav"       50px
+            "contenido" auto
+            "sidebar"   100px
+            "footer"    100px
+        }
+        
+        .header{ grid-area: header;}
+        .nav{ grid-area: nav;text-align: center}
+        .contenido{ grid-area: contenido;}
+        .sidebar{ grid-area: sidebar;}
+        .footer{ grid-area: footer;text-align: center; padding: 3px;  background-color: rgb(248, 212, 200);}
+        
+           
+  
+    [class*="col-"] {
+     width: 100%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+            .pagina{
+                max-width: 1000px;
+                margin: auto;
+                grid-template:
+                "header     header"     100px
+                "nav        nav"        50px
+                "sidebar    contenido"  auto                
+                "footer     footer"     100px
+                / 200px     1fr
+            }
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+    }
+    </style>
+</head>
+
+<body>
+    <div class="pagina">
+        <div class="header"> 
+            <font face="nunito,arial,verdana"><h1>Conociendo HTML (HyperText Markup Language) </h1></font>
+        </div>
+        <div class="nav"> 
+            <font face="nunito,arial,verdana">
+                <a href='index.html'>Home </a>|
+                <a href='temas.html'>Temas </a>|
+                <a href='recursos.html'>Recursos Multimedia </a>|
+                <a href='aprendizaje.html'>Aprendizaje </a>|
+                <a href='autor.html'>autor </a>|
+                <a href='aside.html'>Contenido UNAD </a>
+            
+
+            </font>
+        
+        </div>
+      
+       <div class="contenido">
+        <font face="nunito,arial,verdana">
+            <section id="mediaQ">
+                <h3> Sitios Responsivos con Media Queries</h3> 
+                <p>
+                    Las media queries (en español "consultas de medios") son útiles cuando deseas modificar tu página web o aplicación 
+                    en función del tipo de dispositivo (como una impresora o una pantalla) o de características y parámetros específicos 
+                    (como la resolución de la pantalla o el ancho del viewport del navegador)</br> </br> 
+                    
+                    <b>Sintaxis </b></br> 
+
+                    Las media queries consisten de un tipo de medio opcional y una o más expresiones de características de medios. 
+                    Varias consultas se pueden combinar utilizando operadores lógicos. No distinguen entre mayúsculas y minúsculas.
+                    
+                    El resultado de la consulta es "verdadero" cuando el tipo de medio (si se especifica) coincide con el dispositivo 
+                    en el que se está mostrando el documento y todas las expresiones en el media query son "verdaderas". En este caso,
+                    se aplica los estilos correspondientes, siguiendo las reglas usuales de cascada.</br> </br> 
+
+                    <b>Media Types</b>
+                    Los Media Types (tipos de medios) describen la categoría general de un dispositivo. Excepto cuando se utilizan los 
+                    operadores lógicos not o only, el tipo de medio es opcional y será interpretada como all.</br> </br> 
+
+                    all</br> 
+
+                    Apto para todos los dispositivos.</br> 
+
+                    print</br> 
+
+                    Destinado a material impreso y visualización de documentos en una pantalla en el modo de vista previa de impresión. </br> </br> 
+                    
+                    screen</br> 
+
+                    Destinado principalmente a las pantallas.</br> 
+                    
+                    speech</br> 
+
+                    Destinado a sintetizadores de voz.</br> </br> 
+                                       
+                </p>
+            </section>
+            <section id="SEO">
+                <h3>El HTML para SEO </h3>
+                <p>                    
+                Por su parte, HTLM se refiere en términos generales a un lenguaje informático utilizado para crear y ordenar el contenido que
+                se encuentra dentro de una página web.</br>
+                
+                Este es utilizado para el desarrollo de los dominios. Son las siglas en inglés para HyperText Markup Language, o en español 
+                Lenguaje de Marcas de Hipertexto.</br>
+                Las Marcas de Hipertexto son etiquetas o tags son increíblemente necesarias y útiles pues no solo ordenan el contenido, sino 
+                que además permiten que los buscadores puedan indexar de manera rápida las páginas web.</br>
+
+                Es por esto, por lo que cuando se habla de HTML para SEO se refieren al uso de las tags para optimizar una página y que la 
+                misma pueda ser indexada.</br>
+
+                Las etiquetas funcionan con caracteres menor y mayor que (<>) donde el concepto a realizar debe estar dentro de dicho símbolo, 
+                por ejemplo: <etiqueta>. Aunque debes saber que esto es el inicio de una tag, para marcar la finalización de la misma, se debe
+                agregar otro símbolo: </nombre de la etiqueta>.</br>
+
+                Básicamente los desarrolladores web crean códigos con una nomenclatura inglesa que luego se ven reflejados en las páginas web.
+                 Con los HTML para SEO se pueden agregar efectos en los textos creados tal como cursiva, subrayado, negrita, salto de línea, 
+                 colocar una imagen, etc.</br>
+
+                </p>
+
+
+            </section>
+
+         </font>   
+
+        </div>  
+                             
+                
+            
+       
+        <div class="sidebar">  
+        <nav>
+            <ul>
+            <li><a href='#MediaQ'>Media Queries</a></li>
+            <li><a href='#SEO'>Recomendaciones SEO</a></li>
+        
+            
+            </ul> 
+        </nav>
+        </div>
+        <div class="footer">Desarrollado por : Johana Benavidez</div>
+    </div>
+</body>
+</html>

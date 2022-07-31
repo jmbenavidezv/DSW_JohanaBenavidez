@@ -1,0 +1,134 @@
+<header>
+    <title>Objetos Virtuales de Aprendizaje - HTML</title>
+</header>
+<style>
+    body{ margin: 0; background: rgb(116, 176, 179);}
+    .paginaT{ 
+        background: white;
+        display: grid;
+        height: 250vh;
+        grid-template:
+        "header"    100px
+        "nav"       50px
+        "contenido" auto
+        "sidebar"   100px
+        "footer"    100px
+    }
+    
+    .header{ grid-area: header;text-align: center}
+    .nav{ grid-area: nav;text-align: center}
+    .contenido{ grid-area: contenido;}
+    .sidebar{ grid-area: sidebar;}
+    .footer{ grid-area: footer;text-align: center; padding: 3px;  background-color: rgb(248, 212, 200);}
+    @media (min-width:900px){            
+        .paginaT{
+            max-width: 1000px;
+            margin: auto;
+            grid-template:
+            "header     header"     100px
+            "nav        nav"        50px
+            "sidebar    contenido"  auto                
+            "footer     footer"     100px
+            / 200px     1fr
+        }
+    }    
+</style>
+</head>
+<body>
+<div class="paginaT">
+    <div class="header"> 
+        <font face="nunito,arial,verdana"><h1>Conociendo HTML (HyperText Markup Language) </h1></font>
+    </div>
+    <div class="nav"> 
+        <font face="nunito,arial,verdana">
+            <a href='index.html'>Home </a>|
+            <a href='temas.html'>Temas </a>|
+            <a href='recursos.html'>Recursos Multimedia </a>|
+            <a href='aprendizaje.html'>Aprendizaje </a>|
+            <a href='autor.html'>autor </a>|
+            <a href='aside.html'>Contenido UNAD </a>
+        </font>
+      
+    </div>
+    <div class="contenido"> 
+        <p>
+            <font face="nunito,arial,verdana">
+           
+            <section id="fundamentos">
+                <h2>Fundamentos de HTML</h2></br>
+                        
+                    El HTML (HyperText Markup Language) es un lenguaje para describir el contenido de los documentos de 
+                    la web.     Utiliza una sintaxis especial que contiene marcadores (conocidos como "elementos") que rodean 
+                    al texto que hay dentro del documento para indicar a los agentes de usuario cómo deben interpretar esta
+                    parte del documento.</br>
+                    HTML fue inventado por Tim Berners-Lee, un físico del instituto de investigación CERN en Suiza.
+                    Se le ocurrió la idea de un sistema de hipertexto basado en Internet y publicó la primera versión de 
+                    HTML en 1991. Desde entonces, cada nueva versión del lenguaje HTML viene con nuevas etiquetas y 
+                    atributos para el marcado.</br>
+                
+                    El navegador web lee el archivo HTML y muestra su contenido para que los usuarios de Internet puedan verlo.</br></br>
+                    Todas las páginas HTML cuentan con una serie de elementos HTML, formados por un conjunto de etiquetas y atributos. 
+                    Los elementos HTML son los bloques de construcción de una página web. Una etiqueta indica al navegador dónde empieza y termina un elemento, 
+                    mientras que un atributo describe las características de un elemento.</br></br>
+        
+                    <B>Las tres partes principales de un elemento son:</B></br>
+                    
+                    Etiqueta de apertura. Se utiliza para indicar dónde empieza a tener efecto un elemento. Esta se envuelve con corchetes de apertura y cierre. Por ejemplo, usa la etiqueta de apertura <p> para crear un párrafo.
+                    Contenido. Es el resultado que ven los demás usuarios.</br>
+                    Etiqueta de cierre. Igual que la de apertura, pero con una barra inclinada antes del nombre del elemento.
+                </font>
+            </section> 
+        </p>
+       
+            <p>
+                <h4>
+                <font face="nunito,arial,verdana">Etiquetas </h4>
+                
+                    Las etiquetas HTML son fragmentos de código que nos permiten crear elementos HTML. Los elementos son la estructura básica de HTML. 
+                    Dichos elementos tienen dos propiedades básicas: atributos y contenido.
+
+               
+                    <img src="image_html.png" alt="label" height="250" width="250" style="border:2px solid black"></br></br>
+
+                     Un elemento, para que sea válido,  generalmente tiene una etiqueta de inicio (<nombre-del-elemento>) y una etiqueta de cierre (</nombre-del-elemento>).
+                     En este punto cabe destacar que los elementos no son etiquetas. Los elementos están representados por etiquetas, pero, generalmente por error, se les considera lo mismo. Este contenido es lo que se verá afectado por la 
+                     funcionalidad o el significado del elemento.
+                </font>
+            </p>
+
+
+
+        <section id="Interaccion">
+            <p>
+                <font face="nunito,arial,verdana">
+                <h4>Interación HTML y CSS</h4>
+
+                Originalmente, las páginas HTML sólo incluían información sobre sus contenidos de texto e imágenes. Con el desarrollo del estándar 
+                HTML, empezaron a incluir también información sobre el aspecto de sus contenidos: tipos de letra, colores y márgenes.</br>
+                La posterior aparición de tecnologías como JavaScript, provocaron que las páginas HTML también incluyeran el código de las 
+                aplicaciones (scripts) que se utilizan para crear páginas web dinámicas.</br>
+                Incluir en una misma página HTML los contenidos, el diseño y la programación complica en exceso su mantenimiento. Normalmente,
+                los contenidos y el diseño de la página web son responsabilidad de diferentes personas, por lo que es adecuado separarlos. 
+                CSS es el mecanismo que permite separar los contenidos definidos mediante XHTML y el aspecto que deben presentar esos contenidos: </br>
+                </font>
+
+                <img src="html.gif" alt="label" height="180" width="250" style="border:2px solid black"></br></br>
+            </p>
+     
+         
+
+        </section>
+    </div>
+    <div class="sidebar">  
+    <nav>
+        <ul>
+         <li><a href='index.html'>Home </a></li>
+         <li><a href='#fundamentos'>Introducción HTML</a></li> 
+         <li><a href='#Interaccion'>Interacción</a></li>         
+        </ul> 
+     </nav>
+    </div>
+    <div class="footer">Desarrollado por : Johana Benavidez</div>
+</div>
+</body>
+</html>

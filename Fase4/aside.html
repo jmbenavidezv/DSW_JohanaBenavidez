@@ -1,0 +1,69 @@
+<header>
+    <title>Objetos Virtuales de Aprendizaje - HTML</title>
+</header>
+<style>
+    body{ margin: 0; background: rgb(116, 176, 179);}
+    .pagina{ 
+        background: white;
+        display: grid;
+        height: auto;
+        grid-template:
+        "header"    100px
+        "nav"       50px
+        "contenido" auto
+        "sidebar"   100px
+        "footer"    100px
+    }
+    
+    .header{ grid-area: header;}
+    .nav{ grid-area: nav;text-align: center}
+    .contenido{ grid-area: contenido;}
+    .sidebar{ grid-area: sidebar;}
+    .footer{ grid-area: footer;text-align: center; padding: 3px;  background-color: rgb(248, 212, 200);}
+    @media (min-width:900px){            
+        .pagina{
+            max-width: 1000px;
+            margin: auto;
+            grid-template:
+            "header     header"     100px
+            "nav        nav"        50px
+            "sidebar    contenido"  auto                
+            "footer     footer"     100px
+            / 200px     1fr
+        }
+    }    
+</style>
+</head>
+<body>
+<div class="pagina">
+    <div class="header"> 
+        <font face="nunito,arial,verdana"><h1>Conociendo HTML (HyperText Markup Language) </h1></font>
+    </div>
+    <div class="nav"> 
+        <font face="nunito,arial,verdana">
+            <a href='index.html'>Home </a>|
+            <a href='temas.html'>Temas </a>|
+            <a href='recursos.html'>Recursos Multimedia </a>|
+            <a href='aprendizaje.html'>Aprendizaje </a>|
+            <a href='autor.html'>autor </a>|
+            <a href='aside.html'>Contenido UNAD </a>
+         
+
+        </font>
+      
+    </div>
+    <div class="contenido"> 
+        <p>
+            <font face="nunito,arial,verdana">
+            <section id="adside">
+                 <h1>Contenido Externo UNAD </h1>
+                <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> 
+                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+        </p>
+
+    </div>
+ 
+</div>
+</body>
+</html>
