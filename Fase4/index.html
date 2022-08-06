@@ -1,3 +1,5 @@
+
+<html lang="es">
 <header>
     <title>Objetos Virtuales de Aprendizaje - HTML</title>
 </header>
@@ -6,13 +8,13 @@
     .pagina{ 
         background: white;
         display: grid;
-        height: 110vh;
+        height: auto;
         grid-template:
         "header"    100px
         "nav"       50px
         "contenido" auto
         "sidebar"   100px
-        "footer"    100px
+        "footer"    150px
     }
     
     .header{ grid-area: header;text-align: center}
@@ -28,7 +30,7 @@
             "header     header"     100px
             "nav        nav"        50px
             "sidebar    contenido"  auto                
-            "footer     footer"     100px
+            "footer     footer"     150px
             / 200px     1fr
         }
     }    
@@ -90,7 +92,7 @@
                 Etiqueta de cierre. Igual que la de apertura, pero con una barra inclinada antes del nombre del elemento.
             </font>
         </section>
-        </p>
+        </p>      
 
     </div>
     <div class="sidebar">  
@@ -102,7 +104,26 @@
         </ul> 
      </nav>
     </div>
-    <div class="footer">Desarrollado por : Johana Benavidez</div>
+    <div class="footer">       
+        <p>
+            <meta charset="utf-8"/>
+            <meta name="keywords" content="html, css, bootstrap, desarrollo web"/>
+            <meta name="description" content="Desarrollo de sitios web usando HTML, CSS y bootstrap"/>
+            <meta name="Author" content="Johana Benavidez"/> Desarrollado por : Johana Benavidez
+            </br>
+            Universidad Nacional Abierta y a Distancia</br>
+            <a href="https://www.unad.edu.co/">https://www.unad.edu.co/ </a>          
+
+        </p>
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="¡CSS Válido!" />
+            </a>
+        </p>
+    
+    </div>
 </div>
 </body>
 </html>
